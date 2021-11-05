@@ -110,7 +110,6 @@ public class MatchmakingManager {
         if (players.get(dungeon) != null) {
             for (Player p : players.get(dungeon)) {
                 p.teleport(main.getConfig().getLocation("spawn"));
-                p.getInventory().clear();
                 for (PotionEffect pe : p.getActivePotionEffects()) {
                     p.removePotionEffect(pe.getType());
                 }
